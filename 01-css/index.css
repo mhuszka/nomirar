@@ -861,19 +861,21 @@ h2:hover {
 }
 
 .project-1 span {
-    color: rgb(9, 44, 81);
+    color: white;
+    text-shadow:
+        -1px -1px 0 rgb(9, 44, 81),
+        1px -1px 0 rgb(9, 44, 81),
+        -1px 1px 0 rgb(9, 44, 81),
+        1px 1px 0 rgb(9, 44, 81); 
+    /*    color: rgb(9, 44, 81);*/
     position:absolute;
     left: 163px;
     top: 75px;
 }
 
 .project-1 span:hover {
-    color: rgb(250, 250, 250);
-    text-shadow:
-        -1px -1px 0 rgb(9, 44, 81),
-        1px -1px 0 rgb(9, 44, 81),
-        -1px 1px 0 rgb(9, 44, 81),
-        1px 1px 0 rgb(9, 44, 81); 
+    color: rgb(9, 44, 81);
+    text-shadow: none; 
 }
 
 /****** PROJET 2 ******/
@@ -898,20 +900,39 @@ h2:hover {
 }
 
 .project-2 span {
-    color: rgb(9, 44, 81);
-    position: absolute;
-    left: -85px;
-    top: 75px;
-}
-
-.project-2 span:hover {
-    color: rgb(250, 250, 250);
+    color: white;
     text-shadow:
         -1px -1px 0 rgb(9, 44, 81),
         1px -1px 0 rgb(9, 44, 81),
         -1px 1px 0 rgb(9, 44, 81),
         1px 1px 0 rgb(9, 44, 81); 
+    /*    color: rgb(9, 44, 81);*/
+    position:absolute;
+    left: -85px;
+    top: 75px;
 }
+
+.project-2 span:hover {
+    color: rgb(9, 44, 81);
+    text-shadow: none; 
+}
+/*
+.project-2 span {
+color: rgb(9, 44, 81);
+position: absolute;
+left: -85px;
+top: 75px;
+}
+
+.project-2 span:hover {
+color: rgb(250, 250, 250);
+text-shadow:
+-1px -1px 0 rgb(9, 44, 81),
+1px -1px 0 rgb(9, 44, 81),
+-1px 1px 0 rgb(9, 44, 81),
+1px 1px 0 rgb(9, 44, 81); 
+}
+*/
 
 /****** PROJET 3 ******/
 
@@ -931,20 +952,42 @@ h2:hover {
 }
 
 .project-3 span {
-    color: rgb(9, 44, 81);
-    position: absolute;
-    left: -75px;
-    top: 75px;
-}
-
-.project-3 span:hover {
-    color: rgb(250, 250, 250);
+    color: white;
+/*
     text-shadow:
         -1px -1px 0 rgb(9, 44, 81),
         1px -1px 0 rgb(9, 44, 81),
         -1px 1px 0 rgb(9, 44, 81),
         1px 1px 0 rgb(9, 44, 81); 
+*/
+    /*    color: rgb(9, 44, 81);*/
+    position:absolute;
+    left: -75px;
+    top: 75px;
 }
+
+.project-3 span:hover {
+    color: rgb(9, 44, 81);
+    text-shadow: none; 
+}
+
+/*
+.project-3 span {
+color: rgb(9, 44, 81);
+position: absolute;
+left: -75px;
+top: 75px;
+}
+
+.project-3 span:hover {
+color: rgb(250, 250, 250);
+text-shadow:
+-1px -1px 0 rgb(9, 44, 81),
+1px -1px 0 rgb(9, 44, 81),
+-1px 1px 0 rgb(9, 44, 81),
+1px 1px 0 rgb(9, 44, 81); 
+}
+*/
 
 /******* PROJET 4 ******/
 
