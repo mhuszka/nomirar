@@ -14,6 +14,10 @@ function appear(){
     imagehover1.classList.remove('hidden');
 }
 
+
+
+
+
 var imagehover2 = document.querySelector('.image-hover2');
 var project2 = document.querySelector('.image-preview2');
 
@@ -22,4 +26,18 @@ project2.addEventListener('mouseover', appear2);
 
 function appear2(){
     imagehover2.classList.remove('hidden');
+}
+
+
+
+
+
+var imagehover3 = document.querySelector('.image-hover3');
+var project3 = document.querySelector('.image-preview3');
+
+imagehover3.classList.add('hidden');
+project3.addEventListener('mouseover', appear3);
+
+function appear3(){
+    imagehover3.classList.remove('hidden');
 }

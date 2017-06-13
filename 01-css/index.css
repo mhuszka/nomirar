@@ -15,7 +15,7 @@
     position: fixed;
     top:0;
     z-index:10;
-    
+
 }
 
 .nomirar-nav {
@@ -856,7 +856,6 @@ h2:hover {
 .project-1 {
     position: relative;
     margin-top: 210px;
-    z-index: 1;
 }
 
 .project-1:hover {
@@ -864,7 +863,7 @@ h2:hover {
 }
 
 .project-1 > p {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .project-1 > img {
@@ -884,7 +883,6 @@ h2:hover {
         1px -1px 0 rgb(9, 44, 81),
         -1px 1px 0 rgb(9, 44, 81),
         1px 1px 0 rgb(9, 44, 81); 
-    /*    color: rgb(9, 44, 81);*/
     position:absolute;
     left: 163px;
     top: 75px;
@@ -899,7 +897,6 @@ h2:hover {
 
 .project-2 {
     position: relative;
-    z-index: 1;
     margin-top: 30px;
 }
 
@@ -908,12 +905,11 @@ h2:hover {
 }
 
 .project-2 > p {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .project-2 img {
     vertical-align: middle;
-    z-index: 1;
 }
 
 .image-hover2{
@@ -929,9 +925,7 @@ h2:hover {
         1px -1px 0 rgb(9, 44, 81),
         -1px 1px 0 rgb(9, 44, 81),
         1px 1px 0 rgb(9, 44, 81); 
-    /*    color: rgb(9, 44, 81);*/
     position:absolute;
-    line-height: 100px;
     left: -85px;
     top: 75px;
 }
@@ -940,53 +934,42 @@ h2:hover {
     color: rgb(9, 44, 81);
     text-shadow: none; 
 }
-/*
-.project-2 span {
-color: rgb(9, 44, 81);
-position: absolute;
-left: -85px;
-top: 75px;
-}
-
-.project-2 span:hover {
-color: rgb(250, 250, 250);
-text-shadow:
--1px -1px 0 rgb(9, 44, 81),
-1px -1px 0 rgb(9, 44, 81),
--1px 1px 0 rgb(9, 44, 81),
-1px 1px 0 rgb(9, 44, 81); 
-}
-*/
 
 /****** PROJET 3 ******/
 
 .project-3 {
     position: relative;
-    z-index: 1;
     margin-top: 30px;
-
 }
 
 .project-3:hover {
     cursor: crosshair;
 }
 
+.project-3 img {
+    vertical-align: middle;
+
+}
+
+.image-hover3{
+    position: absolute;
+    top: -30px;
+    left:-30px;
+}
+
 .project-3 > p {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .project-3 span {
     color: white;
-/*
     text-shadow:
         -1px -1px 0 rgb(9, 44, 81),
         1px -1px 0 rgb(9, 44, 81),
         -1px 1px 0 rgb(9, 44, 81),
         1px 1px 0 rgb(9, 44, 81); 
-*/
-    /*    color: rgb(9, 44, 81);*/
     position:absolute;
-    left: -75px;
+    left: -85px;
     top: 75px;
 }
 
@@ -994,24 +977,6 @@ text-shadow:
     color: rgb(9, 44, 81);
     text-shadow: none; 
 }
-
-/*
-.project-3 span {
-color: rgb(9, 44, 81);
-position: absolute;
-left: -75px;
-top: 75px;
-}
-
-.project-3 span:hover {
-color: rgb(250, 250, 250);
-text-shadow:
--1px -1px 0 rgb(9, 44, 81),
-1px -1px 0 rgb(9, 44, 81),
--1px 1px 0 rgb(9, 44, 81),
-1px 1px 0 rgb(9, 44, 81); 
-}
-*/
 
 /******* PROJET 4 ******/
 
