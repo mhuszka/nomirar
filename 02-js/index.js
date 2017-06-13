@@ -1,8 +1,8 @@
-$('.txt').html(function(i, html) {
-  var chars = $.trim(html).split("");
-
-  return '<span>' + chars.join('</span><span>') + '</span>';
-});
+//$('.txt').html(function(i, html) {
+//  var chars = $.trim(html).split("");
+//
+//  return '<span>' + chars.join('</span><span>') + '</span>';
+//});
 
 var imagehover1 = document.querySelector('.image-hover1');
 var project1 = document.querySelector('.image-preview1');
