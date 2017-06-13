@@ -50,3 +50,15 @@ project4.addEventListener('mouseover', appear4);
 function appear4(){
     imagehover4.classList.remove('hidden');
 }
+
+//PROJET-5
+
+var imagehover5 = document.querySelector('.image-hover5');
+var project5 = document.querySelector('.image-preview5');
+
+imagehover5.classList.add('hidden');
+project5.addEventListener('mouseover', appear5);
+
+function appear5(){
+    imagehover5.classList.remove('hidden');
+}
