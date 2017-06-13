@@ -132,7 +132,7 @@ header {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    bottom: -41px;
+    bottom: -39px;
     left: 5px;
 }
 
@@ -148,7 +148,7 @@ header {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    bottom: -41px;
+    bottom: -39px;
     right: 18px;
 }
 
@@ -840,6 +840,10 @@ h2:hover {
     background-color: #fff8f8;
     margin-top: 120px;
 }
+
+.hidden {
+    display: none;
+}
 /******* PROJET 1 ******/
 
 .project-1 {
@@ -853,11 +857,17 @@ h2:hover {
 }
 
 .project-1 > p {
-    font-size: 30px;
+    font-size: 80px;
 }
 
 .project-1 > img {
     vertical-align: middle;
+}
+
+.image-hover1{
+    position: absolute;
+    top: 30px;
+    left: -30px;
 }
 
 .project-1 span {
@@ -897,6 +907,12 @@ h2:hover {
 .project-2 img {
     vertical-align: middle;
     z-index: 1;
+}
+
+.image-hover2{
+    position: absolute;
+    top: -30px;
+    left:-30px;
 }
 
 .project-2 span {
