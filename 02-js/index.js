@@ -1,7 +1,5 @@
 var text = $('.txt')
 
-
-
 text.html(function(i, html) {
   var chars = $.trim(html).split("");
 

@@ -11,6 +11,12 @@
 
 /* FAIRE DES VARIABLES POUR LES IMAGES: ; QUI CHANGENT AU CHARGEMENT */
 
+.backnav {
+    position: fixed;
+    top:0;
+    
+}
+
 .nomirar-nav {
     font-size: 20px;
     color: rgb(9, 44, 81);
@@ -857,7 +863,7 @@ h2:hover {
 }
 
 .project-1 > p {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 .project-1 > img {
@@ -924,6 +930,7 @@ h2:hover {
         1px 1px 0 rgb(9, 44, 81); 
     /*    color: rgb(9, 44, 81);*/
     position:absolute;
+    line-height: 100px;
     left: -85px;
     top: 75px;
 }
