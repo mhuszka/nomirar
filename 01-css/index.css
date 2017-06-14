@@ -96,47 +96,53 @@ header {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    top: 7px;
-    left: 0;
+    z-index: 5;
+    top: -48px;
+    left: -31px;
 }
 
 .o {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    top: 5px;
-    right: 14px;
+    z-index: 5;
+    top: -50px;
+    right: 49px;
 }
 
 .m {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    top: 255px;
-    left: 0;
+    z-index: 5;
+    top: 195px;
+    left: -36px;
 }
 
 .i {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    top: 255px;
-    right: 30px;
+    z-index: 5;
+    top: 195px;
+    right: 66px;
 }
 
 .r {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    bottom: -41px;
-    left: 5px;
+    z-index: 5;
+    bottom: 18px;
+    left: -31px;
 }
 
 .a {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    bottom: -41px;
+    z-index: 5;
+    bottom: 18px;
     left: 465px;
 }
 
@@ -144,24 +150,16 @@ header {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    bottom: -41px;
-    right: 18px;
+    z-index: 5;
+    bottom: 18px;
+    right: 49px;
 }
 
 .picture {
-    z-index: 9;
-    position: absolute;
-    top: 9.8%;
-    left: 3.5%;
+    z-index: 10;
+    position: relative;
     overflow: hidden;
 }
-
-.picture img {
-    float: left;
-    width:100%;
-    height: 100%;
-}
-
 
 .anim-text-flow span,
 .anim-text-flow-hover:hover span {
