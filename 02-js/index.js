@@ -1,3 +1,22 @@
+//APPARITION DU MENU AU CLIC SUR L'OEIL
+
+var eye = document.querySelector('.eye');
+var navlist = document.querySelector('.nav-list');
+
+eye.addEventListener('click', function() {
+    addmenu();
+  });
+
+function addmenu() {
+  var node = document.createElement("li"); // Create a <li> node
+  node.innerHTML = "<a class='projets1'>Projet</a><a class='propos'>À Propos</a><a class='contact'>Contact</a>"               
+  navlist.appendChild(node);
+  navlist.classList.add('navcss');
+}
+
+
+// CODE DÉGRADÉ
+
 $('.txt').html(function(i, html) {
     var chars = $.trim(html).split("");
 

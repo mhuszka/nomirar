@@ -42,22 +42,10 @@ a:hover {
     text-decoration: none;
 }
 
-/*
-
-.navigate {
-height: 10vh;
-width: 100%;
-display: flex;
-flex-direction: row;
-position: fixed;
-top:0;
-}
-
-
-.nav-list{
-width: 15%;
+.navcss {
+width: 50px;
 left: 86.5%;
-top: 20vh;
+top: 90px;
 color: rgb(16, 52, 166);
 position: absolute;
 display: flex;
@@ -68,7 +56,6 @@ justify-content: space-between;
 transform: rotate(90deg);   
 }
 
-
 .nav-list > li {
 list-style: none;
 cursor: crosshair;
@@ -76,8 +63,9 @@ cursor: crosshair;
 
 .nav-list > li > a {
 text-decoration: none;
+margin-right: 20px;
 }
-*/
+
 
 body {
     margin: 0;
@@ -140,7 +128,7 @@ header {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    bottom: -39px;
+    bottom: -41px;
     left: 5px;
 }
 
@@ -156,7 +144,7 @@ header {
     font-size: 80px;
     color: rgb(17, 28, 167);
     position: absolute;
-    bottom: -39px;
+    bottom: -41px;
     right: 18px;
 }
 
@@ -847,6 +835,7 @@ h2:hover {
 .projets {
     background-color: #fff8f8;
     margin-top: 120px;
+    padding-bottom: 120px;
 }
 
 .hidden {
