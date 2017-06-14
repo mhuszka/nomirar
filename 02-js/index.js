@@ -5,15 +5,24 @@ var navlist = document.querySelector('.nav-list');
 
 eye.addEventListener('click', function() {
     addmenu();
-  });
+});
 
 function addmenu() {
-  var node = document.createElement("li"); // Create a <li> node
-  node.innerHTML = "<a class='projets1'>Projet</a><a class='propos'>À Propos</a><a class='contact'>Contact</a>"               
-  navlist.appendChild(node);
-  navlist.classList.add('navcss');
+    var node = document.createElement("li"); // Create a <li> node
+    node.innerHTML = "<a class='projets1'>Projet</a>";
+    node.classList.add('navcss');
+    navlist.appendChild(node);
+    
+    var node = document.createElement("li"); // Create a <li> node
+    node.innerHTML = "<a class='propos'>&#192;&nbsp;Propos</a>";
+    node.classList.add('navcss');
+    navlist.appendChild(node);
+    
+    var node = document.createElement("li"); // Create a <li> node
+    node.innerHTML = "<a class='contact'>Contact</a>";
+    node.classList.add('navcss');
+    navlist.appendChild(node);
 }
-
 
 // CODE DÉGRADÉ
 

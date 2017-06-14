@@ -15,7 +15,6 @@
     position: fixed;
     top:0;
     z-index:10;
-
 }
 
 .nomirar-nav {
@@ -42,28 +41,72 @@ a:hover {
     text-decoration: none;
 }
 
-.navcss {
-width: 50px;
-left: 86.5%;
-top: 90px;
+/*
+.nav-list{
+    display: none;
+}
+*/
+
+.nav-list {
+cursor: crosshair;
+list-style: none;
 color: rgb(16, 52, 166);
 position: absolute;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+line-height: 70px;
+left: 84.7%;
+top: 150px;
 -ms-transform: rotate(90deg);
 -webkit-transform: rotate(90deg);
 transform: rotate(90deg);   
 }
 
-.nav-list > li {
-list-style: none;
-cursor: crosshair;
+.navcss {
+display: inline;
 }
 
-.nav-list > li > a {
-text-decoration: none;
-margin-right: 20px;
+.projets1{
+    font-size: 20px;
+    color: rgb(9, 44, 81);
+    margin-right: 20px;
+}
+
+.projets1:hover {
+    color: rgb(250, 250, 250);
+    text-shadow:
+        -1px -1px 0 rgb(8, 45, 81),
+        1px -1px 0 rgb(8, 45, 81),
+        -1px 1px 0 rgb(8, 45, 81),
+        1px 1px 0 rgb(8, 45, 81);   
+}
+
+.propos{
+    color: rgb(9, 44, 81);
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.propos:hover {
+    color: rgb(250, 250, 250);
+    text-shadow:
+        -1px -1px 0 rgb(8, 45, 81),
+        1px -1px 0 rgb(8, 45, 81),
+        -1px 1px 0 rgb(8, 45, 81),
+        1px 1px 0 rgb(8, 45, 81);   
+}
+
+.contact{
+    color: rgb(9, 44, 81);
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.contact:hover {
+    color: rgb(250, 250, 250);
+    text-shadow:
+        -1px -1px 0 rgb(8, 45, 81),
+        1px -1px 0 rgb(8, 45, 81),
+        -1px 1px 0 rgb(8, 45, 81),
+        1px 1px 0 rgb(8, 45, 81);   
 }
 
 
@@ -88,7 +131,7 @@ header {
     width: 975px;
     height: 599px;
     position: relative;
-    margin-top: 90px;
+    margin-top: 150px;
     padding: 0;
 }
 
@@ -143,7 +186,7 @@ header {
     position: absolute;
     z-index: 5;
     bottom: 18px;
-    left: 465px;
+    left: 435px;
 }
 
 .rr {
