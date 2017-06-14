@@ -64,22 +64,41 @@ function appear4(){
 
 var imagehover5 = document.querySelector('.image-hover5');
 var project5 = document.querySelector('.image-preview5');
+var span5 = document.querySelector('.span5');
 
 imagehover5.classList.add('hidden');
 project5.addEventListener('mouseover', appear5);
 
 function appear5(){
     imagehover5.classList.remove('hidden');
+    span5.classList.add('span5-hover');
 }
 
 //PROJET-6
 
 var imagehover6 = document.querySelector('.image-hover6');
 var project6 = document.querySelector('.image-preview6');
+var span6 = document.querySelector('.span6');
 
 imagehover6.classList.add('hidden');
 project6.addEventListener('mouseover', appear6);
 
 function appear6(){
     imagehover6.classList.remove('hidden');
+    span6.classList.add('span6-hover');
+}
+
+//PROJET-7
+
+var imagehover7 = document.querySelector('.image-hover7');
+var project7 = document.querySelector('.image-preview7');
+var span7 = document.querySelector('.span7');
+
+imagehover7.classList.add('hidden');
+project7.addEventListener('mouseover', appear7);
+
+function appear7(){
+    imagehover7.classList.remove('hidden');
+    span7.classList.add('span7-hover');
+
 }
