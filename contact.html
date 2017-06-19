@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
 
-      #tilter {
-	display:table-cell;
-	vertical-align:middle;
-	text-align:center;
-}
-      #perspective {
-	position:fixed;
-	width:80%;
-	left:10%;
-	top:70px;
-	bottom:70px;
-	height:calc(100% - 140px);
-	display:table;
-}
-</style>
-</head>
+            #tilter {
+                display:table-cell;
+                vertical-align:middle;
+                text-align:center;
+            }
+            #perspective {
+                position:fixed;
+                width:80%;
+                left:10%;
+                top:70px;
+                bottom:70px;
+                height:calc(100% - 140px);
+                display:table;
+            }
+        </style>
+    </head>
 
-<body>
+    <body>
 
-  <div id="perspective">
-      <div id="tilter">NoMirar est un studio de design graphique et numérique basé à Besançon et fondé en 2016 et dirigé par Mélysa Bojama.NoMirar est un studio de design graphique et numérique basé à Besançon et fondé en 2016 et dirigé par Mélysa Bojama.NoMirar est un studio de design graphique et numérique basé à Besançon et fondé en 2016 et dirigé par Mélysa Bojama.NoMirar est un studio de design graphique et numérique basé à Besançon et fondé en 2016 et dirigé par Mélysa Bojama.NoMirar est un studio de design graphique et numérique basé à Besançon et fondé en 2016 et dirigé par Mélysa Bojama.</div></div>
-</body>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+        <div id="perspective">
+            <div id="tilter">Dirigé par Mélysa Bojama, NoMirar est un studio de création pluridisciplinaire fondé en 2016 et basé à Besançon. Orienté dans la création graphique et web, il saura répondre au mieux aux attentes du client.
 
-<script>// JavaScript Document
-$(document).ready(function(){
-	// Determine position of mouse
-	var currentMousePos = { x: -1, y: -1 };
-	$(document).mousemove(function(event) {
-		// Find width and height of browser
-		var windowWidth = $(window).width();
-		var windowHeight = $(window).height();
-		// Find X and Y coordinates of the mouse
-		currentMousePos.x = event.pageX;
-		currentMousePos.y = event.pageY;
-        console.log(currentMousePos);
-		// Attach vertical line to X position and horizontal line Y position
-		
-		var mousePercentageX = currentMousePos.x / windowWidth * 100;
-		var mousePercentageY = currentMousePos.y / windowHeight * 100;
+                N'hésitez pas à écrire pour toute collaboration, renseignements ou juste pour dire bonjour ! </div></div>
+    </body>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script>// JavaScript Document
+        $(document).ready(function(){
+            // Determine position of mouse
+            var currentMousePos = { x: -1, y: -1 };
+            $(document).mousemove(function(event) {
+                // Find width and height of browser
+                var windowWidth = $(window).width();
+                var windowHeight = $(window).height();
+                // Find X and Y coordinates of the mouse
+                currentMousePos.x = event.pageX;
+                currentMousePos.y = event.pageY;
+                console.log(currentMousePos);
+                // Attach vertical line to X position and horizontal line Y position
+
+                var mousePercentageX = currentMousePos.x / windowWidth * 100;
+                var mousePercentageY = currentMousePos.y / windowHeight * 100;
 
 
-			var rangeX = mousePercentageX - 50 + 'deg';
-			var rangeY = -(mousePercentageY - 50) + 'deg';
-			var tilting = 'rotateY(' + rangeX + ') rotateX(' + rangeY + ')';
-			$('#perspective').css('perspective', perspective);
-			$('#tilter').css('transform', tilting);
+                var rangeX = mousePercentageX - 50 + 'deg';
+                var rangeY = -(mousePercentageY - 50) + 'deg';
+                var tilting = 'rotateY(' + rangeX + ') rotateX(' + rangeY + ')';
+                $('#perspective').css('perspective', perspective);
+                $('#tilter').css('transform', tilting);
 
-	});
-});
-    
-</script>
+            });
+        });
+
+    </script>
 </html>

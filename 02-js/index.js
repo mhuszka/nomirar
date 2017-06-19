@@ -1,3 +1,17 @@
+//PROBLÈME DÉCALAGE HEADER
+
+if( navigator.platform.indexOf('Win') > -1){
+document.querySelector('.r').style.top = '-32px';
+document.querySelector('.rr').style.top = '-32px';
+
+}
+
+
+//CHARGEMENT DU HEADER ALÉATOIRE AU REFRESH DE LA PAGE À FAIRE
+
+
+
+
 //APPARITION DU MENU AU CLIC SUR L'OEIL
 
 var eye = document.querySelector('.eye');
@@ -9,15 +23,15 @@ eye.addEventListener('click', function() {
 
 function addmenu() {
     var node = document.createElement("li"); // Create a <li> node
-    node.innerHTML = "<a class='projets1'>Projet</a>";
+    node.innerHTML = "<a class='projets1'>Projets</a>";
     node.classList.add('navcss');
     navlist.appendChild(node);
-    
+
     var node = document.createElement("li"); // Create a <li> node
     node.innerHTML = "<a class='propos'>&#192;&nbsp;Propos</a>";
     node.classList.add('navcss');
     navlist.appendChild(node);
-    
+
     var node = document.createElement("li"); // Create a <li> node
     node.innerHTML = "<a class='contact'>Contact</a>";
     node.classList.add('navcss');
@@ -31,6 +45,7 @@ $('.txt').html(function(i, html) {
 
     return '<span>' + chars.join('</span><span>') + '</span>';
 });
+
 
 // PROJET-1
 var imagehover1 = document.querySelector('.image-hover1');
@@ -130,3 +145,31 @@ function appear7(){
     span7.classList.add('span7-hover');
 
 }
+
+// ANIMATION POUR LE MOUVEMENT SUR LA DESCRIPTION
+
+$(document).ready(function(){
+            // Determine position of mouse
+            var currentMousePos = { x: -1, y: -1 };
+            $(document).mousemove(function(event) {
+                // Find width and height of browser
+                var windowWidth = $(window).width();
+                var windowHeight = $(window).height();
+                // Find X and Y coordinates of the mouse
+                currentMousePos.x = event.pageX;
+                currentMousePos.y = event.pageY;
+                console.log(currentMousePos);
+                // Attach vertical line to X position and horizontal line Y position
+
+                var mousePercentageX = currentMousePos.x / windowWidth * 100;
+                var mousePercentageY = currentMousePos.y / windowHeight * 100;
+
+
+                var rangeX = mousePercentageX - 50 + 'deg';
+                var rangeY = -(mousePercentageY - 50) + 'deg';
+                var tilting = 'rotateY(' + rangeX + ') rotateX(' + rangeY + ')';
+                $('#perspective').css('perspective', perspective);
+                $('#tilter').css('transform', tilting);
+
+            });
+        });
