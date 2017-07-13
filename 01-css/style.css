@@ -928,7 +928,7 @@ h2 {
 }
 
 .span1 {
-    color: var(--white);
+    color: var(--waleblue);
     position:absolute;
     left: 143px;
     top: 135px;  
@@ -937,10 +937,10 @@ h2 {
     font-weight: 600;
     letter-spacing: 0.125em;
     text-shadow:
-        -1px -1px 0 var(--waleblue),
-        1px -1px 0 var(--waleblue),
-        -1px 1px 0 var(--waleblue),
-        1px 1px 0 var(--waleblue); 
+        -1px -1px 0 var(--white),
+        1px -1px 0 var(--white),
+        -1px 1px 0 var(--white),
+        1px 1px 0 var(--white); 
 }
 
 
