@@ -13,6 +13,7 @@
 body {
     --waleblue: rgb(9, 44, 81);
     --orangemecanique: #ff0000;
+    --petrole :rgb(0, 75, 106);
     --white: #ffffff;
     margin: 0;
     padding: 0;
@@ -928,7 +929,7 @@ h2 {
 }
 
 .span1 {
-    color: var(--waleblue);
+    color: var(--petrole);
     position:absolute;
     left: 143px;
     top: 135px;  
@@ -936,11 +937,6 @@ h2 {
     width: 100%;
     font-weight: 600;
     letter-spacing: 0.125em;
-    text-shadow:
-        -1px -1px 0 var(--white),
-        1px -1px 0 var(--white),
-        -1px 1px 0 var(--white),
-        1px 1px 0 var(--white); 
 }
 
 
@@ -1168,13 +1164,13 @@ h2 {
 }
 
 .description {
-    background-color: white;
+    background-color: var(--white);
 }
 
 #perspective {
     font-size: 18px;
-    color: rgb(9, 44, 81);
-    margin-top: 250px;
+    color: var(--waleblue);
+    margin-top: 120px;
     padding-bottom: 200px;
     width: 550px;
     height: auto;    
@@ -1267,3 +1263,6 @@ h2 {
     left: 115px;
 }
 
+.ll {
+    height: 1000px;
+}
