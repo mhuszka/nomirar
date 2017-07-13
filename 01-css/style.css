@@ -874,11 +874,49 @@ h2 {
     display: none;
 }
 
-/******* PROJET 1 ******/
+/**************** ORGNANIC PATTERNS **********************/
+
+.item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.item:nth-of-type(even) {
+    margin: 0;
+}
+
+.item:first-of-type {
+    grid-column: span 1;
+}
+
+.item__svg {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+}
+
+.item__clippath,
+.item__deco,
+.item__img {
+    transform-origin: 50% 50%;
+}
+
+/******************** PROJET 1 *********************/
 
 .project-1 {
     position: relative;
-    margin-top: 210px;
 }
 
 .project-1:hover {
@@ -889,18 +927,13 @@ h2 {
     vertical-align: middle;
 }
 
-.image-hover1{
-    position: absolute;
-    top: 30px;
-    left: -30px;
-}
-
 .span1 {
     color: var(--white);
     position:absolute;
-    left: 163px;
-    top: 75px;  
+    left: 143px;
+    top: 135px;  
     font-size: 70px;
+    width: 100%;
     font-weight: 600;
     letter-spacing: 0.125em;
     text-shadow:
@@ -911,10 +944,11 @@ h2 {
 }
 
 
-/****** PROJET 2 ******/
+/************************** PROJET 2 **************************/
 
 .project-2 {
     position: relative;
+    margin-top: 400px;
 }
 
 .project-2:hover {
@@ -925,16 +959,14 @@ h2 {
     vertical-align: middle;
 }
 
-.image-hover2{
-    position: absolute;
-    top: -30px;
-    left:-30px;
+.project-2 .item__svg {
+    width: 90%;
 }
 
 .span2{
     color: var(--white);
     position: absolute;
-    left: -85px;
+    left: -105px;
     top: 175px;
     font-size: 70px;
     font-weight: 600;
@@ -946,12 +978,12 @@ h2 {
         1px 1px 0 var(--waleblue);
 }
 
-/****** PROJET 3 ******/
+/*************************** PROJET 3 ***************************/
 
 
 .project-3 {
     position: relative;
-    margin-top: -150px;
+    margin-top: -250px;
 }
 
 .project-3:hover {
@@ -962,10 +994,8 @@ h2 {
     vertical-align: middle;
 }
 
-.image-hover3{
-    position: absolute;
-    top: -30px;
-    left:-30px;
+.project-3 .item__svg {
+    width: 90%;
 }
 
 .span3 {
@@ -983,10 +1013,11 @@ h2 {
         1px 1px 0 var(--waleblue);
 }
 
-/******* PROJET 4 ******/
+/************************* PROJET 4 ************************/
 
 .project-4 {
     position: relative;
+    margin-top: 10px;
 }
 
 .project-4:hover {
@@ -997,43 +1028,42 @@ h2 {
     vertical-align: middle;
 }
 
-.image-hover4{
-    position: absolute;
-    top: -30px;
-    left: 30px;
+.project-4 .item__svg {
+    width: 70%;
 }
 
 .span4 {
     color: var(--white);
     position:absolute;
-    left: -85px;
+    left: 115px;
     top: 205px;
     font-size: 70px;
     font-weight: 600;
     letter-spacing: 0.125em;
     text-shadow:
-       -1px -1px 0 var(--waleblue),
+        -1px -1px 0 var(--waleblue),
         1px -1px 0 var(--waleblue),
         -1px 1px 0 var(--waleblue),
         1px 1px 0 var(--waleblue);
 }
 
-/******* PROJET 5 ******/
+/*********************** PROJET 5 **********************/
 
 .project-5 {
     position: relative;
+    margin-top: -150px;
 }
 
 .project-5:hover {
     cursor: crosshair;
 }
 
-.project-5 > p {
-    font-size: 50px;
-}
-
 .project-5 img {
     vertical-align: middle;
+}
+
+.project-5 .item__svg {
+    width: 80%;
 }
 
 .image-hover5{
@@ -1048,7 +1078,7 @@ h2 {
     letter-spacing: 0.125em;
     color: var(--white);
     text-shadow:
-       -1px -1px 0 var(--waleblue),
+        -1px -1px 0 var(--waleblue),
         1px -1px 0 var(--waleblue),
         -1px 1px 0 var(--waleblue),
         1px 1px 0 var(--waleblue);
@@ -1058,30 +1088,19 @@ h2 {
 }
 
 
-/******* PROJET 6 ******/
+/*************************** PROJET 6 **************************/
 
 .project-6 {
     position: relative;
-    z-index: 1;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 .project-6:hover {
     cursor: crosshair;
 }
 
-.project-6 > p {
-    font-size: 50px;
-}
-
 .project-6 img {
     vertical-align: middle;
-}
-
-.image-hover6{
-    position: absolute;
-    top: 30px;
-    left: -30px;
 }
 
 .span6 {
@@ -1090,43 +1109,34 @@ h2 {
     letter-spacing: 0.125em;
     color: var(--white);
     text-shadow:
-       -1px -1px 0 var(--waleblue),
+        -1px -1px 0 var(--waleblue),
         1px -1px 0 var(--waleblue),
         -1px 1px 0 var(--waleblue),
         1px 1px 0 var(--waleblue);
     position:absolute;
-    left: -85px;
-    top: 75px;
+    left: 185px;
+    top: 195px;
 }
 
 
-/******* PROJET 7 ******/
+/************************** PROJET 7 *************************/
 
 
 .project-7 {
     position: relative;
-    z-index: 1;
-    margin-top: 30px;
-    padding-bottom: 20px;
+    margin-top: -200px;
 }
 
 .project-7:hover {
     cursor: crosshair;
 }
 
-
 .project-7 img {
     vertical-align: middle;
 }
 
-.image-hover7{
-    position: absolute;
-    top: -30px;
-    left:-30px;
-}
-
-.project-7 > p {
-    font-size: 50px;
+.project-7 .item__svg {
+    width: 80%;
 }
 
 .span7 {
@@ -1135,15 +1145,16 @@ h2 {
     letter-spacing: 0.125em;
     color: var(--white);
     text-shadow:
-       -1px -1px 0 var(--waleblue),
+        -1px -1px 0 var(--waleblue),
         1px -1px 0 var(--waleblue),
         -1px 1px 0 var(--waleblue),
         1px 1px 0 var(--waleblue);
     position: absolute;
-    left: -184px;
+    left: 100px;
     top: 84px
 }
 
+/********************** À PROPOS ******************/
 
 .titrepropos {
     font-size: 40px;
@@ -1170,7 +1181,7 @@ h2 {
 }
 
 
-/* DIV CACHÉE DU PREMIER PROJET */
+/************* DIV CACHÉE DU PREMIER PROJET *************/
 
 .lightbox {
     position: absolute;
@@ -1256,77 +1267,3 @@ h2 {
     left: 115px;
 }
 
-/**************** ORGNANIC PATTERNS **********************/
-
-.js .loading::before {
-    content: '';
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #efeff2;
-}
-
-.js .loading::after {
-    content: '';
-    position: fixed;
-    z-index: 1001;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    margin: -25px 0 0 -25px;
-    pointer-events: none;
-    border-radius: 50%;
-    background: #dcdcde;
-    animation: loaderAnim 0.8s ease-out infinite alternate forwards;
-}
-
-@keyframes loaderAnim {
-    to {
-        transform: scale3d(0.5,0.5,1);
-    }
-}
-
-
-/* items */
-.item {
-    position: relative;
-    width: 500px;
-    max-width: 100%;
-    margin: 0 0 0 auto;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    grid-column: span 2;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
-.item:nth-of-type(even) {
-    margin: 0 auto 0 0;
-}
-
-.item:first-of-type {
-    grid-column: span 1;
-}
-
-.item__svg {
-    position: relative;
-    display: block;
-    width: 80%;
-    height: auto;
-    min-height: 500px;
-    margin: 0 auto;
-}
-
-.item__clippath,
-.item__deco,
-.item__img {
-    transform-origin: 50% 50%;
-}
-
-}
